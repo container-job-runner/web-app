@@ -1,0 +1,5 @@
+.DS_Store
+release-builds
+icons
+node_modules
+package-lock.json
