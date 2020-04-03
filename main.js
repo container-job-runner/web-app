@@ -22,17 +22,15 @@ function changeIcon(app_name)
   {
     case 'darwin':
       switchF = app.dock.setIcon
-      ext = 'icns'
       break;
     default:
       switchF = win.setIcon
-      ext = 'png'
   }
 
   if(app_name === "jupyter")
-    switchF(`assets/jupyter.${ext}`);
+    switchF(`assets/jupyter.png`);
   if(app_name === "theia")
-    switchF(`assets/theia.${ext}`);
+    switchF(`assets/theia.png`);
 }
 
 app.on('ready', createWindow)
