@@ -1,5 +1,5 @@
-# jupyter-app
-An simple electron app that can be used to run Jupiter as a separate application
+# WebApp
+An simple electron app that can be used to run IDEs like Jupiter and Theia in a separate application window
 
 ## Building (Mac and Linux)
 
