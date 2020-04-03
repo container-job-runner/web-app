@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Electron Browser App</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+  <div id="title"> WebApp</div>
+  <form id="url-form" onSubmit="return updateUrl();" id="url-prompt">
+    <input type="text" id="url-input" value="http://" type="text">
+    <button> Open </button>
+  </form>
+  <script>
+    function updateUrl()
+    {
+      location.replace(document.getElementById('url-input').value)
+      return false;
+    }
+  </script>
+</body>
+</html>
