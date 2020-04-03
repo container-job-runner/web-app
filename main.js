@@ -27,10 +27,8 @@ function changeIcon(app_name)
       switchF = win.setIcon
   }
 
-  if(app_name === "jupyter")
-    switchF(`assets/jupyter.png`);
-  if(app_name === "theia")
-    switchF(`assets/theia.png`);
+  if(app_name === "jupyter" || app_name == "theia")
+    switchF(path.join(__dirname, `assets/${app_name}.png`));
 }
 
 app.on('ready', createWindow)
