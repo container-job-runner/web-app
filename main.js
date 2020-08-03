@@ -1,7 +1,6 @@
 const { app, session, BrowserWindow } = require('electron')
 const os = require('os')
 const path = require('path')
-const url = require('url')
 
 function createWindow () {
   // Create the browser window.
@@ -12,7 +11,7 @@ function createWindow () {
   })
   // and load the index.html of the app.
   win.loadURL(process.env['URL'] || `file://${path.join(__dirname, "index.html")}`)
-  changeIcon(win, process.env['ICON'])
+  changeIcon(win, process.env['SERVER'])
 }
 
 function changeIcon(window, app_name)
